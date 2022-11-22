@@ -2,6 +2,7 @@ import React from "react";
 import { data } from "../../../data";
 
 const UseStateArray = () => {
+  // instead of importing, call React.userState.
   const [people, setPeople] = React.useState(data);
   const removeItem = (id) => {
     let newPeople = people.filter((person) => person.id !== id);
