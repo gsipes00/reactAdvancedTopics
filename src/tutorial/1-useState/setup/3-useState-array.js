@@ -8,6 +8,7 @@ const UseStateArray = () => {
   // onClick function
   const removeItem = (id) => {
     let newPeople = people.filter((person) => person.id !== id);
+    // state setter function updates state
     setPeople(newPeople);
   };
   // return jsx
@@ -26,6 +27,7 @@ const UseStateArray = () => {
           </div>
         );
       })}
+      {/* setup onClick as an arrow function, so that it is invoked when clicked */}
       <button className='btn' onClick={() => setPeople([])}>
         clear items
       </button>
