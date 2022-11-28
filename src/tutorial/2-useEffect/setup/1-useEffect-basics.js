@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // by default runs after every re-render
 // cleanup function
-// second parameter
+// second parameter.
 const UseEffectBasics = () => {
   return <h2>useEffect Basics</h2>;
 };
